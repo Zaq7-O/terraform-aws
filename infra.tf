@@ -148,7 +148,6 @@ module "asg" {
 
   # Auto scaling group
   asg_name                  = "one-asg"
-  #vpc_zone_identifier       = ["subnet-1235678", "subnet-87654321"]
   vpc_zone_identifier       = ["var.vpc_private_subnets"]
   health_check_type         = "EC2"
   min_size                  = 2
